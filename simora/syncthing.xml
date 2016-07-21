@@ -2,14 +2,14 @@
 <Container>
   <Beta>False</Beta>
   <Category>Backup: Cloud: Network:Other Tools:</Category>
-  <Date>2015-09-24</Date> 
-  <Changes>[b]24.09.15: [/b] Inital release.</Changes>
+  <Date></Date> 
+  <Changes></Changes>
   <Name>syncthing</Name>
   <Project>https://github.com/syncthing/syncthing</Project>
   <Support>http://lime-technology.com/forum/index.php?topic=43080.0</Support>
   <Description>Syncthing replaces proprietary sync and cloud services with something open, trustworthy and decentralized. Your data is your data alone and you deserve to choose where it is stored, if it is shared with some third party and how it's transmitted over the Internet.</Description>
-  <Registry>https://hub.docker.com/r/joeybaker/syncthing/</Registry>
-  <Repository>joeybaker/syncthing</Repository>
+  <Registry>https://hub.docker.com/r/istepanov/syncthing/</Registry>
+  <Repository>istepanov/syncthing</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
   <Environment>
@@ -45,18 +45,18 @@
   <Data>
     <Volume>
       <HostDir></HostDir>
-      <ContainerDir>/config</ContainerDir>
+      <ContainerDir>/home/syncthing/.config/syncthing</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
     <Volume>
       <HostDir></HostDir>
-      <ContainerDir>/sync</ContainerDir>
+      <ContainerDir>/home/syncthing/Sync</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
   </Data>
   <Version></Version>
   <WebUI>http://[IP]:[PORT:8384]</WebUI>
-  <Banner>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/syncthing-banner.png</Banner>
-  <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/syncthing-icon.png</Icon>
+  <Banner></Banner>
+  <Icon></Icon>
   <ExtraParams></ExtraParams>
 </Container>
